@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Save your networking pals.">
+    	<meta name="keywords" content="networking, connections, business card">
+
+		<title>netWorking Made Easy</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="hero">
+			
+			<div class="myPal">
+				<h1>netWorking Made Easy</h1>
+				
+				<section class="pal">
+					<section class="topBtns">
+						<button class = "tb newPal" type="button" name="button">newPal</button>
+						<select class="tb myPals selectPal" name="">
+							<option value=""></option>
+						</select>
+						<button class ="savepopup popup tb savePal" type="button" name="button">savePal<span class="popuptext" id="mySavePopup">Save Successful</span></button>
+					</section>
+					<section class="user-info">
+					
+						<form>
+							<h3><input class="val name" type="text" name="Name" placeholder="Name"></h3>
+							<h3><input class="val phoneNumber" type="text" name="Phone Number" placeholder="Phone Number"></h3>
+							<h3><input class="val email" type="text" name="Email" placeholder="Email"></h3>
+							<textarea class="val discription" placeholder="Info..."></textarea>
+						</form>
+					</section>
+					<section class="pal-img">
+						<img type class="img" src="img/profilePic.png" alt="">
+						<input type="file" class="upLoadPal">
+					</section>
+					<button class ="deletePopUp popup delete" type="button" name="button">Delete Pal<span class="popuptext" id="myDeletePopup">Delete Successful</span></button>
+				</section>
+			</div>
+		</div>	
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

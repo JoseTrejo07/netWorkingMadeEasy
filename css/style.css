@@ -1,0 +1,186 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+.hero{
+  background: #2A2B2A;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+h1{
+  text-align: center;
+  padding:-18%;  font-size: 30px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.pal{
+  width: 800px;
+  height: 400px;
+  position: relative;
+}
+
+.pal-img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.pal-img img{
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+::placeholder{
+  color: white;
+}
+.user-info{
+  background: #385F71;
+  width: 480px;
+  height: 270px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  color:darkslategray;
+  padding: 45px;
+  box-sizing: border-box;
+  z-index: 2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.user-info h3{
+  margin: 5px 0 5px;
+  color: white;
+}
+
+.user-info h3 input{
+  background: #385F71;
+  border: none;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.discription{
+  background: #385F71;
+  border: none;
+  color: white;
+  text-shadow: 2px 2px 5px black;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+}
+
+
+.myPal{
+  width: 800px;
+  height: 400px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.topBtns{
+  margin-left: 5%;
+}
+
+.tb{
+  cursor: pointer;
+  margin-top: 3%;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.myPals{
+  width: 20%;
+  height: 25px;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.upLoadPal{
+  display:none;
+}
+
+.delete{
+  margin-top: 38%;
+  margin-left: 4.5%;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  cursor:default;
+  pointer-events: none;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+  z-index: 1000;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
